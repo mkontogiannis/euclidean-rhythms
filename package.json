@@ -1,0 +1,31 @@
+{
+  "name": "euclidean-rhythms",
+  "version": "1.0.0",
+  "description": "Calculates the patterns based on the euclidean rhythms algorithm",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "mocha src/index.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkontogiannis/euclidean-rhythms.git"
+  },
+  "keywords": [
+    "euclidean",
+    "rhythms",
+    "euclid",
+    "bjorklund",
+    "Godfried Toussaint"
+  ],
+  "author": "Michael Kontogiannis <mike@kontogiannis.io> (http://m.kontogiannis.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mkontogiannis/euclidean-rhythms/issues"
+  },
+  "homepage": "https://github.com/mkontogiannis/euclidean-rhythms#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "3.5.0",
+    "mocha": "3.1.2"
+  }
+}
