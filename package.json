@@ -4,7 +4,9 @@
   "description": "Calculates the patterns based on the euclidean rhythms algorithm",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js"
+    "test": "mocha src/index.test.js -w",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js"
+
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "3.5.0",
+    "istanbul": "0.4.5",
     "mocha": "3.1.2"
   }
 }
