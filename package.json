@@ -1,6 +1,6 @@
 {
   "name": "euclidean-rhythms",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculates the patterns based on the euclidean rhythms algorithm",
   "main": "src/index.js",
   "scripts": {
