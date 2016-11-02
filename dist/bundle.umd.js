@@ -56,8 +56,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	
 	/**
-	   *  Set the input source for the FFT analysis. If no source is
-	   *  provided, FFT will analyze all sound in the sketch.
+	   *  Returns the calculated pattern of equally distributed pulses in total steps
+	   *  based on the euclidean rhythms algorithm described by Godfried Toussaint 
 	   *
 	   *  @method  getPattern
 	   *  @param {Number} pulses Number of pulses in the pattern 
