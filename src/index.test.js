@@ -2,7 +2,7 @@ var expect = require('chai').expect;
 var patterns = require('./patterns');
 var er = require('./index');
 
-var formatPattern = function(p) { return (p) ? 'x': '_';};
+var formatPattern = function(p) { return (p) ? 'x': '-';};
 
 describe('euclidean-rhythms', function() {
 
@@ -30,7 +30,7 @@ describe('euclidean-rhythms', function() {
 		});
 
 		patterns.forEach(function(p) {
-			it('calculate `' + p.name + ' (' + p.pulses + ',' + p.steps + ')` - ' + p.pattern.map(formatPattern).join(''), function() {
+			it('calculate `' + p.name + ' (' + p.pulses + ',' + p.steps + ')` : ' + p.pattern.map(formatPattern).join(''), function() {
 				var euclidean = er.getPattern(p.pulses, p.steps);
 				expect(euclidean).to.be.an('Array');
 				expect(euclidean).to.have.length(p.steps);

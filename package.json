@@ -1,7 +1,7 @@
 {
   "name": "euclidean-rhythms",
   "version": "1.0.1",
-  "description": "Calculates the patterns based on the euclidean rhythms algorithm",
+  "description": "Calculates the patterns based on the euclidean/bjorklund's algorithm",
   "main": "src/index.js",
   "scripts": {
     "lint": "jshint src/*.js",

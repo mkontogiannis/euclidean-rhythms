@@ -13,8 +13,8 @@ var getPattern = function(pulses, steps) {
   }
   
   // Create the two arrays
-  var first = new Array(pulses).fill(1);
-  var second = new Array(steps - pulses).fill(0);
+  var first = new Array(pulses).fill([1]);
+  var second = new Array(steps - pulses).fill([0]);
 
   var firstLength = first.length;
   var minLength = Math.min(firstLength, second.length);
