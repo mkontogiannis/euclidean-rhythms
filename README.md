@@ -18,23 +18,22 @@ Then in your javascript code:
 
 `const er = require('euclidean-rhythms');`
 
-`let cumbia = er.getPattern(3, 4)`
+`let cumbia = er.getPattern(3, 4);`<br />
 cumbia should be [ 1, 0, 1, 1 ]
 
-`let cinquillo = er.getPattern(5, 8)`
+`let cinquillo = er.getPattern(5, 8);`<br />
 cinquillo should be [ 1, 0, 1, 1, 0, 1, 1, 0 ]
 
-and so on ...
+etc ...
 
 ### Browser
-Use one of the prepared browser bundles from [unpkg.com](https://unpkg.com)
-[https://unpkg.com/euclidean-rhythms/dist/bundle.umd.js](https://unpkg.com/euclidean-rhythms/dist/bundle.umd.js)
-[https://unpkg.com/euclidean-rhythms/dist/bundle.umd.min.js](https://unpkg.com/euclidean-rhythms/dist/bundle.umd.min.js)
+Use one of the prepared browser bundles from [unpkg.com](https://unpkg.com) <br />
+[https://unpkg.com/euclidean-rhythms/dist/bundle.umd.js](https://unpkg.com/euclidean-rhythms/dist/bundle.umd.js) <br />
+[https://unpkg.com/euclidean-rhythms/dist/bundle.umd.min.js](https://unpkg.com/euclidean-rhythms/dist/bundle.umd.min.js) <br />
 
 Then in your javascript code:
 
-`var pattern = euclideanRhythms.getPattern(5, 13);`
- 
+`var pattern = euclideanRhythms.getPattern(5, 13);`<br />
  pattern should be : [ 1, 0, 0, 1, 0, 1, 0, 0, 1, 0, 1, 0, 0 ]
 
 ## Develop
