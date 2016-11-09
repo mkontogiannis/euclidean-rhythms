@@ -1,6 +1,6 @@
 {
   "name": "euclidean-rhythms",
-  "version": "1.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "Calculates the patterns based on the euclidean/bjorklund's algorithm",
   "main": "src/index.js",
   "scripts": {
@@ -11,11 +11,13 @@
     "prebuild": "rimraf dist",
     "build:umd": "webpack --output-filename bundle.umd.js",
     "build:umd.min": "webpack --output-filename bundle.umd.min.js -p",
-    "build": "npm-run-all lint test check-coverage --parallel build:*"
+    "build": "npm-run-all lint test check-coverage --parallel build:*",
+    "commit": "git-cz ",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkontogiannis/euclidean-rhythms.git"
+    "url": "https://github.com/mkontogiannis/euclidean-rhythms.git"
   },
   "keywords": [
     "euclidean",
@@ -33,11 +35,17 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "3.5.0",
+    "commitizen": "2.8.6",
+    "cz-conventional-changelog": "1.2.0",
     "istanbul": "0.4.5",
     "jshint": "2.9.4",
     "mocha": "3.1.2",
     "npm-run-all": "3.1.1",
     "rimraf": "2.5.4",
+    "semantic-release": "^4.3.5",
     "webpack": "1.13.3"
+  },
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
   }
 }
