@@ -45,7 +45,10 @@
     "semantic-release": "^4.3.5",
     "webpack": "1.13.3"
   },
-  "czConfig": {
-    "path": "node_modules/cz-conventional-changelog"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   }
+
 }
