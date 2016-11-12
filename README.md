@@ -1,5 +1,10 @@
 #euclidean-rhythms
 
+[![Travis](https://img.shields.io/travis/mkontogiannis/euclidean-rhythms.svg?style=flat-square)](https://travis-ci.org/mkontogiannis/euclidean-rhythms)
+[![Codecov](https://img.shields.io/codecov/c/gh/mkontogiannis/euclidean-rhythms.svg?style=flat-square)](https://codecov.io/gh/mkontogiannis/euclidean-rhythms)
+[![npm](https://img.shields.io/npm/v/euclidean-rhythms.svg?style=flat-square)](https://www.npmjs.com/package/euclidean-rhythms)
+[![npm](https://img.shields.io/npm/dt/euclidean-rhythms.svg?style=flat-square)](https://www.npmjs.com/package/euclidean-rhythms)
+
 A micro-library in javascript that calculates the rhythmical patterns of equally distributed pulses in available steps.
 It implements the bjorklund's algorithm that is described by Godfried Toussaint in [The Euclidean algorithm generates traditional musical rhythms](http://cgm.cs.mcgill.ca/~godfried/publications/banff.pdf)
 
