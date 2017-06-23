@@ -1,25 +1,25 @@
 
 /**
    *  Returns the calculated pattern of equally distributed pulses in total steps
-   *  based on the euclidean rhythms algorithm described by Godfried Toussaint 
+   *  based on the euclidean rhythms algorithm described by Godfried Toussaint
    *
    *  @method  getPattern
-   *  @param {Number} pulses Number of pulses in the pattern 
+   *  @param {Number} pulses Number of pulses in the pattern
    *  @param {Number} steps  Number of steps in the pattern (pattern length)
    */
-var getPattern = function(pulses, steps) {
+const getPattern = (pulses, steps) => {
   if (pulses < 0 || steps < 0 || steps < pulses) {
   	return [];
   }
-  
-  // Create the two arrays
-  var first = new Array(pulses).fill([1]);
-  var second = new Array(steps - pulses).fill([0]);
 
-  var firstLength = first.length;
-  var minLength = Math.min(firstLength, second.length);
-  
-  var loopThreshold = 0;
+  // Create the two arrays
+  let first = new Array(pulses).fill([1]);
+  let second = new Array(steps - pulses).fill([0]);
+
+  let firstLength = first.length;
+  let minLength = Math.min(firstLength, second.length);
+
+  let loopThreshold = 0;
   // Loop until at least one array has length gt 2 (1 for first loop)
   while (minLength > loopThreshold) {
   	// Allow only loopThreshold to be zero on the first loop
@@ -32,7 +32,7 @@ var getPattern = function(pulses, steps) {
       first[x] = Array.prototype.concat.call(first[x], second[x]);
     }
 
-    // if the second was the bigger array, slice the remaining elements/arrays and update 
+    // if the second was the bigger array, slice the remaining elements/arrays and update
     if (minLength === firstLength) {
     	second = Array.prototype.slice.call(second, minLength);
     }
@@ -47,11 +47,11 @@ var getPattern = function(pulses, steps) {
 	}
 
 	// Build the final array
-  var pattern = [];
-  first.forEach(function(f) {
+  let pattern = [];
+  first.forEach(f => {
     pattern = Array.prototype.concat.call(pattern, f);
   });
-  second.forEach(function(s) {
+  second.forEach(s => {
     pattern = Array.prototype.concat.call(pattern, s);
   });
 

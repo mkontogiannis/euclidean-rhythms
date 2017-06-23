@@ -1,36 +1,37 @@
-var expect = require('chai').expect;
-var patterns = require('./patterns');
-var er = require('./index');
+import { expect } from 'chai';
+import patterns from './patterns';
+import er from './index';
 
 var formatPattern = function(p) { return (p) ? 'x': '-';};
 
-describe('euclidean-rhythms', function() {
+describe('euclidean-rhythms', () => {
 
-	describe('getPattern() should ', function() {
+	describe('getPattern() should ', () => {
 
-		it('return empty array when pulses is negative', function() {
+		it('return empty array when pulses is negative', () => {
 			var euclidean = er.getPattern(-1, 4);
 			expect(euclidean).to.be.an('Array');
 			expect(euclidean).to.have.length(0);
 			expect(JSON.stringify(euclidean)).to.equal(JSON.stringify([]));
 		});
 
-		it('return empty array when steps is negative', function() {
+		it('return empty array when steps is negative', () => {
 			var euclidean = er.getPattern(2, -4);
 			expect(euclidean).to.be.an('Array');
 			expect(euclidean).to.have.length(0);
 			expect(JSON.stringify(euclidean)).to.equal(JSON.stringify([]));
 		});
 
-		it('return empty array when steps < pulses', function() {
+		it('return empty array when steps < pulses', () => {
 			var euclidean = er.getPattern(3, 2);
 			expect(euclidean).to.be.an('Array');
 			expect(euclidean).to.have.length(0);
 			expect(JSON.stringify(euclidean)).to.equal(JSON.stringify([]));
 		});
 
-		patterns.forEach(function(p) {
-			it('calculate `' + p.name + ' (' + p.pulses + ',' + p.steps + ')` : ' + p.pattern.map(formatPattern).join(''), function() {
+		patterns.forEach(p => {
+			it('calculate `' + p.name + ' (' + p.pulses + ',' + p.steps + ')` : ' +
+					p.pattern.map(formatPattern).join(''), () => {
 				var euclidean = er.getPattern(p.pulses, p.steps);
 				expect(euclidean).to.be.an('Array');
 				expect(euclidean).to.have.length(p.steps);
@@ -38,6 +39,5 @@ describe('euclidean-rhythms', function() {
 			});
 
 		});
-		
 	});
 });

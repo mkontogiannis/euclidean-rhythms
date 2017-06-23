@@ -1,4 +1,4 @@
-#euclidean-rhythms
+# euclidean-rhythms
 
 [![Travis](https://img.shields.io/travis/mkontogiannis/euclidean-rhythms.svg?style=flat-square)](https://travis-ci.org/mkontogiannis/euclidean-rhythms)
 [![Codecov](https://img.shields.io/codecov/c/gh/mkontogiannis/euclidean-rhythms.svg?style=flat-square)](https://codecov.io/gh/mkontogiannis/euclidean-rhythms)
@@ -16,7 +16,7 @@ The current solution is a javascript interpretation of the python code that is r
 
 ## Usage
 
-### Node.js 
+### Node.js
 Run `npm install euclidean-rhythms`
 
 Then in your javascript code:
@@ -43,5 +43,5 @@ Then in your javascript code:
 
 ## Develop
 
-Clone the git repository and cd into it. 
+Clone the git repository and cd into it.
 Run `npm run test` for executing the unit tests and `npm run build` to build a browser umd bundle with webpack.
