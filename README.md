@@ -22,7 +22,9 @@ Run `npm install euclidean-rhythms`
 Then in your javascript code:
 
 `const er = require('euclidean-rhythms');`
+
 or in es6
+
 `import er from 'euclidean-rhythms';`
 
 `let cumbia = er.getPattern(3, 4);`<br />
