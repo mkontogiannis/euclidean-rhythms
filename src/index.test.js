@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import patterns from './patterns';
 import er from './index';
 
-var formatPattern = function(p) { return (p) ? 'x': '-';};
+const formatPattern = p => p ? 'x': '_';
 
 describe('euclidean-rhythms', () => {
 

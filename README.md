@@ -10,7 +10,7 @@ It implements the bjorklund's algorithm that is described by Godfried Toussaint 
 
 ## Purpose
 
-I wrote this library since I couldn't find out there an implementation that yields to the expected results as described on the paper above and also being well tested with unit tests and code coverage.
+I wrote this library because I couldn't find an implementation that yields to the expected results as described on the paper above and also being well tested with unit tests and code coverage.
 
 The current solution is a javascript interpretation of the python code that is retrieved from [atonalmicroshores.com](http://www.atonalmicroshores.com/2014/03/bjorklund-py/)
 
@@ -22,6 +22,8 @@ Run `npm install euclidean-rhythms`
 Then in your javascript code:
 
 `const er = require('euclidean-rhythms');`
+or in es6
+`import er from 'euclidean-rhythms';`
 
 `let cumbia = er.getPattern(3, 4);`<br />
 cumbia should be [ 1, 0, 1, 1 ]

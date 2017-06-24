@@ -58,6 +58,6 @@ const getPattern = (pulses, steps) => {
   return pattern;
 };
 
-module.exports = {
+export default {
   getPattern: getPattern
 };

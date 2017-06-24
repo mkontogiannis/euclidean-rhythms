@@ -30,6 +30,10 @@
     "bjorklund",
     "Godfried Toussaint"
   ],
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "author": "Michael Kontogiannis <mike@kontogiannis.io> (http://m.kontogiannis.io/)",
   "license": "MIT",
   "bugs": {
