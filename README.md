@@ -37,8 +37,8 @@ etc ...
 
 ### Browser
 Use one of the prepared browser bundles from [unpkg.com](https://unpkg.com) <br />
-[https://unpkg.com/euclidean-rhythms/dist/bundle.umd.js](https://unpkg.com/euclidean-rhythms/dist/bundle.umd.js) <br />
-[https://unpkg.com/euclidean-rhythms/dist/bundle.umd.min.js](https://unpkg.com/euclidean-rhythms/dist/bundle.umd.min.js) <br />
+[https://unpkg.com/euclidean-rhythms@latest/dist/bundle.umd.js](https://unpkg.com/euclidean-rhythms@latest/dist/bundle.umd.js) <br />
+[https://unpkg.com/euclidean-rhythms@latest/dist/bundle.umd.min.js](https://unpkg.com/euclidean-rhythms@latest/dist/bundle.umd.min.js) <br />
 
 Then in your javascript code:
 
