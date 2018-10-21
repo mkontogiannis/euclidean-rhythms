@@ -15,10 +15,7 @@ export default {
 			{
 				test: /\.js$/, 
 				loader: 'babel-loader', 
-				include,
-				query: {
-					presets: ['@babel/preset-env']
-				}
+				include
 			},
 			{
 				test: /\.json$/, 
