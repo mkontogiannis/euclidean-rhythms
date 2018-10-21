@@ -16,8 +16,7 @@
     "build:umd.min": "webpack --output-filename bundle.umd.min.js --mode=production",
     "build": "npm-run-all lint cover check-coverage --parallel build:*",
     "precommit": "npm-run-all cover check-coverage",
-    "commit": "git-cz ",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "commit": "git-cz "
   },
   "repository": {
     "type": "git",

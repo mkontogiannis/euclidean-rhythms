@@ -14,8 +14,9 @@ before_script:
 script:
   - npm run build
 after_success:
+  if: branch = master
   - npm run report-coverage
-  - npm run semantic-release
+  - npx semantic-release
 branches:
   except:
     - /^v\d+\.\d+\.\d+$/
