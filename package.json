@@ -7,7 +7,7 @@
     "lint": "jshint src/*.js",
     "watch:test": "npm t -- -w",
     "test": "mocha src/index.test.js --require @babel/register",
-    "cover": "nyc npm t",
+    "cover": "nyc --reporter=lcov npm t",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "prebuild": "rimraf dist",
