@@ -11,9 +11,20 @@ export default {
 	},
 	devtool: 'source-map',
 	module: {
-		loaders: [
-			{test: /\.js$/, loader: 'babel-loader', include},
-			{test: /\.json$/, loader: 'json-loader', include}
+		rules: [
+			{
+				test: /\.js$/, 
+				loader: 'babel-loader', 
+				include,
+				query: {
+					presets: ['@babel/preset-env']
+				}
+			},
+			{
+				test: /\.json$/, 
+				loader: 'json-loader', 
+				include
+			}
 		]
 	}
 };
