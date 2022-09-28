@@ -1,0 +1,22 @@
+name: Euclidean Rhythms Workflow
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+      - uses: actions/checkout@v3
+
+      - run: npm prune
+      - run: npm run build
+      - run: npm run report-coverage
+#      - run: npm run semantic-release
