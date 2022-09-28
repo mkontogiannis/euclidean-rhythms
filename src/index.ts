@@ -27,7 +27,7 @@ export function getPattern(pulses: number, steps: number) {
     }
 
     // For the minimum array loop and concat
-    for (var x = 0; x < minLength; x++) {
+    for (let x = 0; x < minLength; x++) {
       first[x] = [...first[x], ...second[x]];
     }
 
