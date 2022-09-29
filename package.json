@@ -12,7 +12,7 @@
     "test": "jest src/*.test.ts --coverage",
     "prebuild": "rimraf dist",
     "build:main": "tsup src/index.ts --format esm --sourcemap --dts",
-    "build:cjs.min": "tsup src/index.ts --format cjs --sourcemap --minify",
+    "build:cjs.iife.min": "tsup src/index.ts --format cjs,iife --sourcemap --minify",
     "build": "npm-run-all lint test --parallel build:*",
     "precommit": "npm-run-all test",
     "commit": "git-cz ",
