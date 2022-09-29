@@ -1,6 +1,6 @@
 # euclidean-rhythms
 
-![example branch parameter](https://github.com/mkontogiannis/euclidean-rhythms/actions/workflows/main.yml/badge.svg?branch=master)
+[![example branch parameter](https://github.com/mkontogiannis/euclidean-rhythms/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/mkontogiannis/euclidean-rhythms/actions/workflows/main.yml)
 [![Codecov](https://img.shields.io/codecov/c/gh/mkontogiannis/euclidean-rhythms.svg?style=flat-square)](https://codecov.io/gh/mkontogiannis/euclidean-rhythms)
 [![npm](https://img.shields.io/npm/v/euclidean-rhythms.svg?style=flat-square)](https://www.npmjs.com/package/euclidean-rhythms)
 [![npm](https://img.shields.io/npm/dt/euclidean-rhythms.svg?style=flat-square)](https://www.npmjs.com/package/euclidean-rhythms)
