@@ -7,19 +7,25 @@ on:
     branches:
       - master
 jobs:
-  build:
+  'build-and-deploy':
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/setup-node@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
           node-version: '16'
-      - uses: actions/checkout@v3
 
-      - run: npm prune
-      - run: npm run build
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: Upload coverage reports to Codecov with GitHub Action
+      - name: Test & Build
+        run: npm run build
+
+      - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v2
 
-      - run: npm run semantic-release
+      - name: Release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm run semantic-release
